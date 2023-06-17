@@ -162,6 +162,7 @@
     -webkit-animation: typing 5s steps(13, end),
         blink-caret .5s step-end infinite alternate;
 }
+
 .shortCuts {
     display: flex;
     flex-direction: column;
@@ -169,12 +170,27 @@
     justify-content: center;
     width: 50%;
 }
+
 .shortCuts #top {
     display: flex;
     align-items: center;
     justify-content: center;
 }
+
 .shortCuts svg {
     margin: 2vh 4vh;
     box-shadow: 15px 15px 55px rgba(185, 185, 185, 0.314);
+}
+
+@media (max-width: 500px) {
+    .input-container input[type=text].input {
+        width: 100px;
+    }
+    .loader {
+        width: 40px;
+        height: 40px;
+    }
+    .shortCuts svg {
+        margin: 1vh;
+    }
 }
