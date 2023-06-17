@@ -183,6 +183,9 @@
 }
 
 @media (max-width: 500px) {
+    * {
+        font-size: 15px;
+    }
     .input-container input[type=text].input {
         width: 100px;
     }
