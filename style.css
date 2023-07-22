@@ -179,27 +179,35 @@
 
 .shortCuts svg {
     margin: 2vh 4vh;
-    box-shadow: 15px 15px 55px rgba(185, 185, 185, 0.314);
+    /* box-shadow: 15px 15px 55px rgba(185, 185, 185, 0.314); */
+    filter: drop-shadow(15px 15px 55px rgba(185, 185, 185, 0.314));
 }
 
 @media (max-width: 500px) {
     body {
-        background-color:  #2f2f2f;
+        background-color: #2f2f2f;
     }
+
     .container {
         height: 80vh;
     }
+
     .input-container input[type=text].input {
         width: 100px;
         font-size: 20px;
     }
+
     .loader {
         width: 40px;
         height: 40px;
     }
+
     .shortCuts svg {
-        margin: 1vh;
+        margin: 1.5vh;
+        /* box-shadow: 15px 15px 55px rgba(185, 185, 185, 0.314); */
+        filter: drop-shadow(15px 15px 55px rgba(185, 185, 185, 0.314));
     }
+
     .shortCuts a {
         text-decoration: none;
     }
